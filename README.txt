@@ -1,8 +1,24 @@
 This GitHub repository contains Chaste code for simulating Barrett's 
 esophagus segment establishment.
 
+**Files in this repository**
 
-**Preliminaries**
+The repository contains three folders - apps, src, and apps. 
+
+You can ignore the <apps> folder for now.
+
+The <src> folder contains a number of .hpp and .cpp files defining classes that are
+required to compile the test suite(s) for this project.
+
+The <test> folder contains test suite(s) for this project - the code that running 
+simulations.
+
+At the moment, there is a single test suite, called TestBarrettsFirstAttempt.hpp, 
+which contains some first steps toward implementing your desired simulation of 
+Barrett's esophagus segment establishment via crypt fission. 
+
+
+**Coding preliminaries**
 
 Chaste is written in C++. A decent guide to this programming language is the 
 following book, co-written by one of the Chaste developers:
@@ -26,7 +42,7 @@ The aim of this part of Chaste, 'cell-based Chaste', is to develop a
 computational framework that bridges across the subcellular, cellular and 
 tissue scales within a single, generic modelling framework. 
 
-We employ a multi-scale modelling framework comprising up to three 
+We employ a multiscale modelling framework comprising up to three 
 interlinked modules: a model of cellular behaviour (e.g. progress through 
 the cell cycle); a model of the movement and mechanical interaction between 
 cells (e.g. a vertex model); and a model of the transport of key signalling 
